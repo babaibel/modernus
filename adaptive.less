@@ -1,6 +1,51 @@
 /* -------- adaptive styles --------- */
 
+.mob-menu{
+	display: block;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	margin-left: 6px;
+	text-align: center;
+	background: transparent;
+	.icon{
+		display: inline-block;
+		vertical-align: middle;
+		color: #b02344;
+		font-size: 28px;
+	}
+}
+
+.mtop-mob-btn{
+    width: 100%;
+    height: 45px;
+    display: block;
+    background: url(mtop.png) repeat-x 0 0 transparent;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    clear: both;
+    box-shadow: 0 0 3px #6b9cb3;
+    -webkit-box-shadow: 0 0 3px #6b9cb3;
+    -moz-box-shadow: 0 0 3px #6b9cb3;
+    text-align: center;
+    color: #fff;
+    line-height: 44px;
+    font-size: 17px;
+}
+
+@media screen and (min-width: 1024px){
+	
+}
+
 @media screen and (max-width: 1023px){
+	*{
+		box-sizing: border-box;
+	}
+	body,
+	html{
+		min-width: 320px;
+	}
 	#n,
 	#bl,
 	#onas,
@@ -9,8 +54,10 @@
 	}
 	#rt{
 		min-width: 320px;
-		max-width: 480px;
+		max-width: 320px;
 		margin: 0 auto;
+		background-repeat: repeat;
+		background-position: 0 0;
 		div{
 			width: 100%;
 			min-width: 0;
@@ -21,6 +68,169 @@
 
 	#obe,
 	#foo{
+		display: none;
+	}
+
+	/* header */
+
+	#head{
+		margin-top: 50px;
+		padding: 10px;
+		height: auto;
+	}
+
+	#up{
+		height: 50px;
+		background-size: auto 52px;
+	}
+
+	#upm{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+		background: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		display: none;
+	}
+
+	#upm div.up-left,
+	#upm div.up-right {
+		width: 100%;
+		float: none;
+		a{
+			display: block;
+    		float: none;
+		}
+	}
+
+	#upm a{
+		height: auto;
+		padding: 10px 15px!important;
+		border-bottom: 1px solid #eee;
+		text-align: center;
+	}
+
+	#prm{
+		float: none;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		padding: 10px 15px;
+		margin: 0;
+		background: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		span{
+			display: none;
+		}
+
+		display: none;
+
+	}
+
+	#kar{
+		height: auto;
+		text-align: center;
+		padding: 0;
+		margin: 0 0 15px;
+	}
+
+	#ajaxSearch_input{
+		width: 100%;
+	}
+
+	#log{
+		width: 50%!important;
+		a{
+			width: 146px;
+			height: 44px;
+			display: block;
+			margin: 0;
+			background-size: contain;
+		}
+		// span{
+		// 	display: none;
+		// }
+	}
+
+	#phon {
+		width: 50%!important;
+		display: block;
+		float: left;
+		font: 7px/9px Arial;
+		margin-top: 0;
+		dl {
+			display: block;
+			font: 16px/20px Arial;
+			padding: 0;
+			white-space: nowrap;
+		}
+		dt {
+			font: 16px/22px Arial;
+			color: #899da7;
+			position: relative; 
+			top: auto; 
+			left: auto; 
+			display: inline-block;
+		}
+		span{
+			display: none;
+		}
+	}
+
+	#mtop ul.menu{
+		display: block;
+		width: 100%;
+	}
+
+	#mtop ul li.menu-item{
+		width: 100%!important;
+		display: block!important;
+		background: url(https://modernus.ru/css/mtop.png) repeat-x 0 0;
+		height: 38px;
+		line-height: 38px;
+		padding: 0;
+		margin-left: 0;
+		float: none;
+		span{
+			right: 0;
+			height: 38px;
+			background-repeat: repeat; 
+		}
+	}
+
+	#mtop ul li.menu-item a.menu-link{
+		text-align: center;
+		height: 38px;
+		font: 17px/38px Arial;
+		padding: 0!important;
+		div{
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	#mtop ul li.menu-item.first{
+		background-size: 105% auto!important;
+		border-radius: 0;
+	}
+
+	#mtop ul li.mm4 a.menu-link div:after,
+	#mtop ul li.mm7 a.menu-link div:after{
+		right: -16px;
+	}
+	#mtop ul li.menu-item.last{
+		border-radius: 0;
+	}
+
+	#rtr{
+		display: none;
+	}
+	#kmin{
+		position: absolute;
 		display: none;
 	}
 }
