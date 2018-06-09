@@ -8,6 +8,8 @@
 	text-align: center;
 	background: transparent;
 	float: left;
+	position: relative;
+	z-index: 4;
 	.icon{
 		font-size: 28px;
 		color: #b02344;
@@ -39,10 +41,11 @@
 
 #up{
 	.right-btns{
+		position: relative;
 		float: right;
 		width: auto;
+		z-index: 4;
 	}
-	.mob-basket,
 	.mob-search{
 		display: inline-block;
 		height: 48px;
@@ -51,17 +54,14 @@
 		margin-left: 5px;
 		text-align: center;
 		background: transparent;
-	}
-	.mob-search{
+		font-size: 0;
 		.icon{
 			color: #f47121;
-			font-size: 24px;
-		}
-	}
-	.mob-basket{
-		.icon{
-			font-size: 28px;
-			color: #0275a2;
+
+			&:before{
+				font-size: 22px;
+				vertical-align: middle;
+			}
 		}
 	}
 }
@@ -78,6 +78,9 @@
 	html{
 		min-width: 320px;
 	}
+	body{
+		position: relative;
+	}
 	#n,
 	#bl,
 	#onas,
@@ -89,7 +92,7 @@
 	#obe,
 	#foo{
 		min-width: 320px;
-		max-width: 320px;
+		max-width: 480px;
 		width: 100%;
 		margin: 0 auto 10px;
 		background-repeat: repeat;
@@ -110,9 +113,90 @@
 
 		#op,
 		#stat,
-		#na,
-		#bmn{
+		#na{
 			display: none;
+		}
+		#bmn{
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 3;
+			margin: 0;
+			height: auto;
+   			bottom: auto;
+   			text-shadow: none;
+			#bmen{
+				min-width: 320px;
+				max-width: 480px;
+				width: 100%;
+				margin: 0 auto;
+				height: 50px;
+				padding-top: 2px;
+				#en,
+				#vopto{
+					display: none;
+				}
+				#bm{
+					float: right;
+					width: 150px;
+					margin: 0;
+					height: auto;
+					background: none;
+					margin-right: 58px;
+					ul{
+						text-align: right;
+						font-size: 0;
+						li{
+							display: inline-block;
+							vertical-align: top;
+							background: none;
+							float: none;
+							height: auto;
+							a{
+								display: block;
+								width: 48px;
+								height: 48px;
+								padding: 0;
+								line-height: 48px;
+								text-align: center;
+								background: none;
+								text-decoration: none;
+								color: #0275a2;
+								&:before{
+									font-size: 24px;
+									vertical-align: middle;
+								}
+								&.bi1{
+									display: none;
+								}
+								&.bi2.icon-star{
+									color: #84267c;
+								}
+								&.bi3.licab.icon-user{
+									color: #ce213c;
+								}
+							}
+							span {
+								background: #b02344;
+								border-radius: 50%;
+								-moz-border-radius: 50%;
+								-webkit-border-radius: 50%;
+								color: #fff;
+								font: 10px/18px Arial;
+								height: 18px;
+								width: 18px;
+								padding: 0;
+								text-align: center;
+								white-space: nowrap;
+								position: absolute;
+								top: 5px;
+								right: 0;
+								box-shadow: none;
+							}
+						}
+					}
+				}
+			}
 		}
 		#opso {
 			width: 100%;
@@ -208,6 +292,7 @@
 		width: auto!important;
 		margin: 0 -10px;
 		padding: 2px 10px 0;
+		z-index: auto;
 	}
 
 	#upm{
@@ -283,13 +368,16 @@
 		width: 50%!important;
 		display: block;
 		float: left;
-		font: 7px/9px Arial;
+		font-size: 0;
 		margin-top: 0;
 		dl {
 			display: block;
 			font: 16px/20px Arial;
 			padding: 0;
 			white-space: nowrap;
+			& + dl{
+				margin-top: 3px;
+			}
 		}
 		dt {
 			font: 16px/22px Arial;
@@ -520,7 +608,7 @@
 		#otz {
 			width: 100%;
 			height: auto;
-			margin: 0 0 20px;
+			margin: 10px 0 30px;
 			float: none;
 			ul{
 				margin: 0;
