@@ -15,4 +15,9 @@ $(function () {
 		return false;
 	});
 
+	$('.js-left-menu').click(function() {
+		$(this).toggleClass('_open-left-menu');
+		return false;
+	});
+
 });
