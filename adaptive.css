@@ -16,7 +16,7 @@
 }
 .mob-menu .icon {
   font-size: 28px;
-  color: #b02344;
+  color: #0275a2;
 }
 ._open-menu .mob-menu {
   transform: rotate(90deg);
@@ -60,26 +60,33 @@
 #up .right-btns {
   position: relative;
   float: right;
+  margin-right: 48px;
   width: auto;
   z-index: 4;
 }
 #up .mob-search {
-  display: inline-block;
+  display: none;
   height: 48px;
   width: 48px;
   line-height: 48px;
-  margin-left: 5px;
+  margin-left: 0;
   text-align: center;
   background: transparent;
   font-size: 0;
   transition: 0.3s ease;
 }
 #up .mob-search .icon {
-  color: #f47121;
+  color: #ce213c;
 }
 #up .mob-search .icon:before {
   font-size: 22px;
   vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.map-wr {
+  width: 709px;
+  padding: 4px 0 0 8px;
 }
 @media screen and (max-width: 1023px) {
   * {
@@ -106,7 +113,6 @@
   #rti,
   #reklidin {
     min-width: 320px;
-    max-width: 480px;
     width: 100%;
     margin: 0 auto 10px;
     background-repeat: repeat;
@@ -151,7 +157,6 @@
   }
   #foo #bmn #bmen {
     min-width: 320px;
-    max-width: 480px;
     width: 100%;
     margin: 0 auto;
     height: 50px;
@@ -180,6 +185,13 @@
     float: none;
     height: auto;
   }
+  #foo #bmn #bmen #bm ul li:nth-child(2) {
+    display: none;
+  }
+  #foo #bmn #bmen #bm ul li:last-child {
+    right: -48px;
+    position: relative;
+  }
   #foo #bmn #bmen #bm ul li a {
     display: block;
     width: 48px;
@@ -189,7 +201,6 @@
     text-align: center;
     background: none;
     text-decoration: none;
-    color: #0275a2;
   }
   #foo #bmn #bmen #bm ul li a:before {
     font-size: 24px;
@@ -198,11 +209,11 @@
   #foo #bmn #bmen #bm ul li a.bi1 {
     display: none;
   }
-  #foo #bmn #bmen #bm ul li a.bi2.icon-star {
+  #foo #bmn #bmen #bm ul li a.bi0.icon-basket {
     color: #84267c;
   }
   #foo #bmn #bmen #bm ul li a.bi3.licab.icon-user {
-    color: #ce213c;
+    color: #f47121;
   }
   #foo #bmn #bmen #bm ul li span {
     background: #b02344;
@@ -307,6 +318,9 @@
     padding: 2px 10px 0;
     z-index: auto;
   }
+  #up .mob-search {
+    display: inline-block;
+  }
   #upm {
     position: absolute;
     top: 50px;
@@ -331,6 +345,10 @@
   #upm div.up-right a {
     display: block;
     float: none;
+  }
+  #upm div.up-left a.licab,
+  #upm div.up-right a.licab {
+    display: none!important;
   }
   #upm a {
     height: auto;
@@ -363,6 +381,10 @@
     text-align: center;
     padding: 0;
     margin: 0 0 12px;
+    font-size: 0;
+  }
+  #kar a:nth-child(2) {
+    display: none;
   }
   #srch {
     height: 30px;
@@ -498,6 +520,9 @@
   #rek h3,
   #rek div.zag {
     padding: 11px 0 15px 0;
+    width: auto;
+    margin-right: 95px;
+    text-align: center;
   }
   #rek {
     height: 330px;
@@ -560,6 +585,7 @@
     font: 24px/100% Arial;
     color: #3b464c;
     padding: 0 0 8px 0;
+    text-align: center;
   }
   #lid {
     height: auto!important;
@@ -605,9 +631,9 @@
   }
   #lid ul li span.yar span,
   #ne ul li span.yar span {
-    height: auto;
+    height: 17px;
     width: auto;
-    line-height: 13px;
+    font: 700 10px/17px Arial !important;
     padding: 0 4px;
   }
   #lid .slides_control,
@@ -632,6 +658,16 @@
   #lid a.next,
   #ne a.next {
     display: none;
+  }
+  #rek ul li span.yar {
+    right: 0;
+    margin-right: 0;
+  }
+  #rek ul li span.yar span {
+    height: 17px;
+    width: auto;
+    font: 700 10px/17px Arial !important;
+    padding: 0 4px;
   }
   #otzne {
     height: auto;
@@ -665,10 +701,12 @@
   #otzne #otz div.zag {
     width: 100%;
     padding: 0 0 14px 0;
+    text-align: center;
   }
   #otzne #ne {
     height: auto;
     padding-left: 0;
+    text-align: center;
   }
   #otzne #ne h2,
   #otzne #ne h3,
@@ -716,9 +754,11 @@
     background-size: 100% auto;
     height: 10px;
   }
-  #rek.cata div.back {
-    padding: 3px 7px 3px 0;
-    margin-bottom: 13px;
+  #rek.cata {
+    background-image: none;
+  }
+  #rek div.pom {
+    display: none;
   }
   #ban {
     float: none;
@@ -827,16 +867,19 @@
   }
   #otov.pom div.nw {
     display: block;
-    margin: 0 0 27px 0;
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
     position: relative;
     min-height: 100px;
     width: 100%;
   }
+  #otov.pom div.nw:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
   #otov.pom div.nw a.pic {
-    margin: 0 auto 15px;
-    position: relative;
-    top: auto;
-    left: auto;
+    display: none;
   }
   #otov.pom div.nw span {
     padding: 2px 0 0 0;
@@ -845,10 +888,77 @@
     padding: 3px 0 0 0;
   }
   #otov.pom div.nw dt {
-    padding: 4px 0 0 0;
+    padding: 6px 0 0 0;
   }
   #otov.pom div.nw p {
     padding: 4px 0 0 0!important;
+  }
+  #otov.pom div.nw div.otzstar {
+    top: -4px !important;
+    right: 0!important;
+  }
+  #otov.pom div.nw #nfo {
+    margin-left: 0!important;
+  }
+  #otov.pom div.desig {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #otov.pom div.desig a {
+    padding: 0 10px;
+    float: none;
+    height: auto;
+    width: 50%;
+    margin: 5px 0 12px;
+    border: none;
+  }
+  #otov.pom div.desig a img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  #otov.pom span.pic {
+    display: none;
+  }
+  #otov.pom span.int {
+    margin: 0 0 14px;
+  }
+  #otov.pom span.dat {
+    padding: 0 0 15px 8px;
+    font-size: 13px;
+  }
+  #otov.pom span.dat code {
+    font-size: 13px;
+  }
+  #otov.pom span.dat div.zaka {
+    font: 13px/15px Arial;
+    color: #666b6e;
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+  }
+  #otov.pom span.dat div.zaka div.share42init {
+    padding-left: 0;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 70px;
+  }
+  #otov.pom span.dat div.zaka div.share42init span {
+    margin: 0 9px 0 0!important;
+  }
+  #otov.ca {
+    padding: 0!important;
+  }
+  #otov h4 {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
   }
   #otov span {
     font: 12px/14px Arial;
@@ -948,6 +1058,43 @@
     max-width: 100%;
     height: auto;
   }
+  #otov div.vpr {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 100%;
+    margin: 5px 0 15px;
+  }
+  #otov div.vpr ul li {
+    list-style: none;
+    display: block;
+    padding: 10px 15px;
+    color: #5a6b74;
+  }
+  #otov div.vpr ul li a {
+    font-size: 16px;
+  }
+  #otov div.vpr ul li.ot {
+    height: auto;
+    padding: 9px 15px;
+  }
+  #otov div.vpr ul li:nth-child(2) {
+    display: none;
+  }
+  #otov #nfo {
+    margin-bottom: 10px;
+  }
+  #otov div.rss p {
+    padding: 4px 0 16px;
+  }
+  #otov div.rss a {
+    border: 0;
+    margin: 0 0 8px 0;
+    position: relative;
+    font-size: 16px;
+  }
   img.justifycenter {
     display: block;
     width: 100%;
@@ -971,13 +1118,17 @@
     background-size: contain;
   }
   #nei div.net {
-    margin: 0;
+    margin: 0 0 15px;
     padding: 0;
   }
   #nei div.net a.voptov {
     background-size: contain;
     width: 100%;
     position: relative;
+  }
+  #pommen {
+    margin-top: 0;
+    text-align: center;
   }
   #pommen span {
     display: block;
@@ -1001,7 +1152,7 @@
     border-right: 4px solid transparent;
     border-top: 4px solid #000;
     opacity: .5;
-    z-index: 99;
+    z-index: 5;
   }
   #pommen span.a8 div.mel + div {
     display: none;
@@ -1075,5 +1226,108 @@
     right: auto;
     top: auto;
     margin-top: 15px;
+  }
+  #nav1 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+  #nav1 dd {
+    width: auto;
+    height: auto;
+    padding: 0;
+    font: 12px/16px Arial;
+    margin-top: 6px;
+  }
+  #nav a,
+  #nav1 a,
+  #nav2 a {
+    margin-top: 0;
+  }
+  .map-wr {
+    padding: 0;
+    width: 100%;
+  }
+  .map-wr .map,
+  .map-wr .map1 {
+    float: none!important;
+    width: 100%!important;
+  }
+  .map-wr .map span,
+  .map-wr .map1 span {
+    width: 100%!important;
+    height: 300px!important;
+    margin: 0 0 15px;
+  }
+  .map-wr .map span > ymaps,
+  .map-wr .map1 span > ymaps {
+    width: 100%!important;
+    height: 300px!important;
+  }
+  .ymaps-2-1-64-map {
+    width: 100%!important;
+    height: 300px!important;
+  }
+  #otov.no {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 0 10px!important;
+    margin: 0!important;
+  }
+  #otov.no p.ob {
+    padding: 0;
+    position: relative;
+    right: auto!important;
+    font-size: 12px;
+    width: auto;
+  }
+  #otov.no form.reg dd {
+    display: none;
+  }
+  #otov table.lich {
+    background: #f0f5f7;
+    padding: 10px;
+    margin: 0 0 15px;
+  }
+  #otov table.lich tr {
+    margin: 0 0 15px;
+  }
+  #otov table.lich tr:last-child {
+    margin-bottom: 0;
+  }
+  #otov table.lich tr td {
+    margin: 0 0 5px;
+  }
+  #otov table.lich tr td:last-child {
+    margin-bottom: 0;
+  }
+  #otov table.lich tr td input {
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #otov table.lich tr td input.submit {
+    height: auto;
+    width: 100%;
+    margin: 7px 0 0 0;
+    float: none;
+  }
+  #otov ul.subm {
+    padding: 0;
+    margin: 0 0 5px;
+  }
+  #otov ul.subm li {
+    float: none!important;
+    display: block;
+  }
+  #otov ul.subm li a {
+    margin: 0 0 15px;
+  }
+  #otov ul.subm li:last-child a {
+    margin-bottom: 0;
   }
 }
