@@ -62,7 +62,9 @@
     <noindex>
       <button class="mob-menu js-mob-menu"><span class="icon icon-menu"></span></button>
       <div class="right-btns">
-        <button class="mob-search js-mob-search"><span class="icon icon-search"></span></button>
+        <a class="mob-btn mob-btn--basket" href="private/cart" rel="nofollow"><span class="icon icon-basket"></span><span id="itotmob">0</span></a>
+        <button class="mob-btn mob-btn--search js-mob-search"><span class="icon icon-search"></span></button>
+        <a class="mob-btn mob-btn--user" title="Вход в личный кабинет →" href="#login" rel="nofollow"><span class="icon icon-user"></span></a>
       </div>
     </noindex>
     <div id="upm">
@@ -590,16 +592,16 @@
     <div id="bm">
       <script>
         function setCartActionsCallback(){
-          $('#items_total,#items_total1,#itot').text( $('#total_items').text() );
+          $('#items_total,#items_total1,#itot,#itotmob').text( $('#total_items').text() );
           $('#price_total,#price_total1').text( $('#total_price').text() );
           var text = $('#items_total').text();
           if (text == '') {
            $('#corzq').hide();
-           $('#itot').text('0');
-           $('#itot').removeClass('active');
+           $('#itot,#itotmob').text('0');
+           $('#itot,#itotmob').removeClass('active');
          }else {
           $('#corzq').show();
-          $('#itot').addClass('active');
+          $('#itot,#itotmob').addClass('active');
         }
 
         if (text == '') {
