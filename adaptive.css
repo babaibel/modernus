@@ -499,6 +499,34 @@
     bottom: auto;
     transform: translateY(-50%);
   }
+  #rek #ourmen ul li {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+  }
+  #rek #ourmen ul li a {
+    width: 100%;
+    margin: 0;
+  }
+  #rek #ourmen ul li.last {
+    margin-bottom: 0;
+  }
+  #rek #ourmen ul li.active > a {
+    margin-bottom: 15px;
+  }
+  #rek #ourmen ul li.active ul {
+    padding-bottom: 0;
+  }
+  #rek #ourmen ul li.active ul li {
+    margin: 0 0 5px;
+  }
+  #rek #ourmen ul li.active ul li:last-child {
+    margin: 0;
+  }
+  #rek #ourmen ul li.active ul li a {
+    padding: 8px 11px 9px!important;
+    margin: 0;
+  }
   #rek a.next {
     width: 46px;
     height: 46px;
@@ -558,6 +586,16 @@
   #ne ul li a {
     padding: 4px 0 0;
     margin: 18px auto 0;
+  }
+  #lid ul li a span,
+  #ne ul li a span {
+    padding: 5px;
+  }
+  #lid ul li a span img,
+  #ne ul li a span img {
+    width: 100%!important;
+    max-width: 100%!important;
+    height: auto!important;
   }
   #lid ul li div,
   #ne ul li div {
@@ -703,6 +741,11 @@
   }
   #rek.cata {
     background-image: none;
+  }
+  #rek.cata div.back,
+  #rek.cata .hd,
+  #rek.cata #newsco {
+    display: none;
   }
   #rek div.pom {
     display: none;
@@ -1086,26 +1129,11 @@
   #pommen span.a9 {
     margin: 0 0 5px;
   }
-  #pommen span.a8 div.mel {
-    position: relative;
-  }
-  #pommen span.a8 div.mel:after {
-    content: '';
-    position: absolute;
-    right: -16px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #000;
-    opacity: .5;
-    z-index: 5;
-  }
-  #pommen span.a8 div.mel + div {
+  #pommen span.a10 {
     display: none;
   }
-  #pommen span.a8 div.mel._open-left-menu + div {
-    display: block;
+  #pommen span.a8 div.mel {
+    position: relative;
   }
   #pommen span div.mel {
     font: 700 18px/28px Arial;
@@ -1216,12 +1244,24 @@
     width: 100%!important;
     height: 300px!important;
   }
+  #WebLoginLayer0 #otov.no {
+    height: 485px;
+  }
+  #WebLoginLayer2 #otov.no {
+    height: 500px;
+  }
+  #WebLoginLayer2 #otov.no form.reg dl.ri {
+    top: 440px;
+  }
   #otov.no {
     width: 100%;
-    height: auto;
+    background: #f0f5f7;
     display: block;
-    padding: 0 0 10px!important;
+    padding: 15px 10px!important;
     margin: 0!important;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
   }
   #otov.no p.ob {
     padding: 0;
@@ -1230,8 +1270,85 @@
     font-size: 12px;
     width: auto;
   }
+  #otov.no form.reg div {
+    padding: 0;
+    background: none;
+  }
   #otov.no form.reg dd {
     display: none;
+  }
+  #otov.no form.reg dt {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    float: none;
+    margin-right: 0;
+    padding: 0;
+    top: 250px;
+  }
+  #otov.no form.reg label {
+    padding: 0;
+    display: block;
+    margin: 0 0 6px;
+  }
+  #otov.no form.reg input.foe {
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #otov.no form.reg a.submit,
+  #otov.no form.reg input.submit {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+  }
+  #otov.no form.reg input.fo5 {
+    height: 36px!important;
+    margin: 0;
+    width: 100%;
+  }
+  #otov.no form.reg input.submit1 {
+    margin-top: 0;
+    width: auto;
+  }
+  #otov.no form.reg dl {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 15px;
+    float: none!important;
+  }
+  #otov.no form.reg dl.le1 label {
+    margin: 0;
+    padding: 0;
+  }
+  #otov.no form.reg dl.ri {
+    float: none;
+    position: absolute;
+    left: 0;
+    top: 423px;
+    margin: 0;
+  }
+  #otov.no form.reg dl.le0 label {
+    font: 14px/130% Arial;
+    margin: 0;
+  }
+  #otov.no form.reg p.zab {
+    top: 73px;
+    left: auto;
+    right: 0;
+  }
+  #otov.no form.reg p.ob {
+    padding: 0;
+    position: absolute;
+    bottom: auto;
+    top: 215px;
+    right: auto;
+    left: 0;
   }
   #otov table.lich {
     background: #f0f5f7;
@@ -1276,6 +1393,97 @@
   }
   #otov ul.subm li:last-child a {
     margin-bottom: 0;
+  }
+  #ctxt {
+    height: auto!important;
+    margin-left: 0!important;
+  }
+  #ctxt ul {
+    width: 100%;
+    height: auto!important;
+    overflow: visible;
+  }
+  #ctxt ul li {
+    width: 100%;
+    height: auto!important;
+    text-align: left;
+    padding: 0 0 12px;
+  }
+  #cru {
+    height: auto;
+    padding: 0 0 6px 0;
+    color: #596368;
+    float: none;
+    text-align: left;
+  }
+  #lid div.cain {
+    padding: 7px 16px 14px;
+    margin: 0 0 12px;
+  }
+  #lid.ca h2,
+  #lid.ca span.podr {
+    width: auto;
+    padding: 0;
+    float: none;
+    background: none;
+    display: block;
+    margin: 0 0 10px;
+  }
+  #lid.ca div.cavs {
+    float: none;
+    margin: 7px 0 0 0;
+  }
+  #lid.ca a.prev,
+  #lid.ca a.next {
+    display: none!important;
+  }
+  #sort {
+    margin: 0 0 20px;
+  }
+  #sort a {
+    display: inline-block;
+    margin: 4px;
+  }
+  #sort p {
+    display: block;
+    padding-left: 4px;
+    margin: 0 0 5px;
+    font-size: 15px;
+  }
+  #vbned {
+    margin: 21px 0 25px;
+  }
+  #vbned h2 {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 17px;
+  }
+  #vbned ul {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+  #vbned ul li {
+    width: 100%!important;
+    height: auto!important;
+    float: none;
+    border: none!important;
+  }
+  #vbned ul li span.wi {
+    display: none;
+  }
+  #vbned ul li a span.best {
+    width: 92px;
+    height: 20px;
+    bottom: 2px;
+    left: auto;
+    right: 56%;
+  }
+  #vbned ul li button {
+    bottom: 0;
+    left: 50%;
+    right: auto;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1023px) {
