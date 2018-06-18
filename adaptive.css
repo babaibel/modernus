@@ -900,7 +900,7 @@
     height: auto;
     width: 50%;
     margin: 5px 0 12px;
-    border: none;
+    border-color: transparent!important;
   }
   #otov.pom div.desig a img {
     display: block;
@@ -908,6 +908,11 @@
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+  }
+  #otov.pom div.desig a:hover {
+    border-color: transparent!important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
   #otov.pom span.pic {
     display: none;
@@ -1166,6 +1171,11 @@
     padding: 4px 15px 5px;
     margin: 0;
   }
+  #pommen p,
+  #pommen b,
+  #pommen ol {
+    text-align: left;
+  }
   #srch.pom {
     margin: 0 0 25px!important;
   }
@@ -1394,6 +1404,89 @@
   #otov ul.subm li:last-child a {
     margin-bottom: 0;
   }
+  #otov form.reg div,
+  #otov.pom .box1 form.reg div {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 16px!important;
+    width: 100%!important;
+  }
+  #otov form.reg dd,
+  #otov.pom .box1 form.reg dd {
+    display: none;
+  }
+  #otov form.reg label,
+  #otov.pom .box1 form.reg label {
+    font: 15px/100% Arial;
+    color: #3b464c;
+    display: block;
+    padding: 0 0 6px;
+    vertical-align: middle;
+  }
+  #otov form.reg dl,
+  #otov.pom .box1 form.reg dl {
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px;
+  }
+  #otov form.reg dl.le,
+  #otov.pom .box1 form.reg dl.le {
+    float: none;
+  }
+  #otov form.reg input.fo,
+  #otov.pom .box1 form.reg input.fo {
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #otov form.reg p,
+  #otov.pom .box1 form.reg p {
+    width: 100%;
+    padding: 0;
+  }
+  #otov form.reg p.ob,
+  #otov.pom .box1 form.reg p.ob {
+    bottom: 15px;
+    right: auto;
+    left: 10px;
+  }
+  #otov form.reg input.submit,
+  #otov.pom .box1 form.reg input.submit {
+    width: 100%;
+    margin-top: 0;
+  }
+  #otov form.reg .cle,
+  #otov.pom .box1 form.reg .cle {
+    margin: 0!important;
+  }
+  #otov.pom .box1 form.reg#rey div:first-child {
+    padding-bottom: 0;
+  }
+  #otov.pom .box1 h2 {
+    width: 100%!important;
+    padding-bottom: 10px!important;
+    font-size: 17px!important;
+    font-weight: 700;
+  }
+  #otov div.reg ul.tabs {
+    text-align: center;
+  }
+  #otov div.reg ul.tabs li {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 16px 10px;
+    font-size: 16px;
+  }
+  #otov div.reg ul.tabs li:after {
+    display: none!important;
+  }
+  #otov div.reg ul.tabs li:first-child {
+    margin-bottom: 15px!important;
+  }
   #ctxt {
     height: auto!important;
     margin-left: 0!important;
@@ -1484,6 +1577,341 @@
     bottom: 0;
     left: 50%;
     right: auto;
+  }
+  .login-text {
+    display: none;
+  }
+  #shopCart {
+    margin: 0 0 35px!important;
+    height: auto!important;
+  }
+  #shopCart table,
+  #shopCart tbody,
+  #shopCart tr,
+  #shopCart td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #shopCart tr {
+    position: relative;
+    padding-bottom: 15px;
+  }
+  #shopCart tr:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #shopCart td:nth-child(2) {
+    margin: 0 0 15px;
+  }
+  #shopCart td:nth-child(3),
+  #shopCart td:nth-child(4),
+  #shopCart td:nth-child(5) {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 22px;
+  }
+  #shopCart td input.shk-count {
+    font: 14px/200% Arial;
+    color: #3b464c;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #shopCart td a.shk-del {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 5;
+  }
+  #shopCart td a.img {
+    width: 200px;
+    height: 130px;
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 10px auto;
+  }
+  #shopCart td a.img img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    max-height: 130px;
+    height: 100%;
+  }
+  #shopCart td a.img span.te {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  #shopCart td a.tov {
+    font-size: 18px;
+  }
+  #bkor p {
+    line-height: 130%;
+  }
+  #bkor div.pmo {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 13px;
+    color: #455761;
+    padding: 15px;
+    margin: 0 0 15px;
+  }
+  #bkor div.pmo:after {
+    display: none;
+  }
+  #bkor div.obsh {
+    font-size: 17px;
+    text-align: center;
+    padding: 15px 0;
+  }
+  #bkor div.obsh b {
+    font-size: 22px;
+  }
+  #bkor div.obsh dt {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 7px;
+  }
+  #bkor div.ofo {
+    display: block;
+    padding: 0;
+    background: none;
+  }
+  #bkor div.ofo a {
+    background-size: contain;
+    margin-right: 0;
+    float: none;
+    display: block;
+  }
+  #bkor div.ofo span {
+    font-size: 12px;
+    width: 100%;
+    margin: 7px 0 0;
+    white-space: nowrap;
+    text-align: right;
+  }
+  #corr {
+    margin: 0!important;
+    background: none;
+    padding: 0 0 15px;
+  }
+  #corr span {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: auto;
+    right: auto;
+    background: transparent;
+  }
+  #corr span a {
+    display: inline-block;
+  }
+  #corr h1 {
+    margin: 0 0 7px;
+    font-size: 27px;
+  }
+  #corr b {
+    width: 100%!important;
+    height: auto;
+    display: block;
+    position: relative;
+    top: auto;
+    right: auto!important;
+    background: transparent;
+  }
+  #lid.smo {
+    width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+  #lid.smo h2 {
+    padding-left: 0;
+  }
+  #lid.smo ul {
+    width: 100%;
+  }
+  #lid.smo ul li {
+    margin: 0 0 16px;
+  }
+  #lid.smo .slides_control {
+    height: auto!important;
+  }
+  #ofo {
+    margin: 0;
+    padding-right: 0;
+  }
+  #ofo #ofko {
+    margin-bottom: 20px;
+  }
+  #ofo #ofko div.oim {
+    padding-right: 0;
+    margin: 15px auto;
+  }
+  #ofo #ofko div.obsh {
+    text-align: center;
+  }
+  #ofo #ofko div.obsh b {
+    white-space: nowrap;
+  }
+  #ofo #ofko dt,
+  #ofo #ofko b a {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto!important;
+    width: auto!important;
+    margin-top: 7px;
+    display: block;
+  }
+  #ofo #ofko b a {
+    display: inline-block;
+  }
+  #ofo #shopCart {
+    margin: 0!important;
+  }
+  #ofor {
+    width: 100%!important;
+  }
+  #ofor table,
+  #ofor tbody,
+  #ofor tr,
+  #ofor td {
+    display: block;
+    width: 100%;
+  }
+  #ofor tr {
+    margin: 0 0 15px;
+    height: auto!important;
+  }
+  #ofor label {
+    margin: 0 0 6px!important;
+    font-size: 15px;
+    display: block;
+  }
+  #ofor input.fo {
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #ofor input#phone {
+    width: 100%!important;
+    margin: 0 0 3px!important;
+  }
+  #ofor span.vsm {
+    top: 3px;
+  }
+  #ofor td tt.your {
+    width: 100%;
+  }
+  #ofor td em {
+    margin: 0 0 20px;
+    padding-left: 25px;
+    text-align: left;
+    background-position: left center;
+  }
+  #ofor p {
+    width: 100%;
+    float: none;
+    margin-top: 8px;
+    text-align: left;
+  }
+  #ofor input.submit {
+    margin: 0;
+    white-space: normal;
+    float: none;
+    background-size: contain;
+    margin: 20px 0 0;
+    width: 100%;
+  }
+  #ofor span.jq-selectbox {
+    width: 100%!important;
+  }
+  #ofor span.jq-selectbox .select {
+    width: 100%;
+    height: 32px;
+    font: 14px/28px Arial;
+  }
+  #ofor .jq-selectbox li {
+    padding: 7px 10px 8px;
+    font-size: 14px;
+  }
+  #ofor span.jq-selectbox div.dropdown {
+    width: 100%;
+  }
+  #ofor span.jq-file .browse {
+    float: none!important;
+    display: inline-block;
+    width: auto;
+  }
+  #pos {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  #ne.cata div.sta {
+    padding: 0;
+  }
+  #ne.cata div.sta p {
+    text-align: left;
+  }
+  #ne.cata div.sta form {
+    padding: 15px 10px;
+  }
+  #ne.cata div.sta form label {
+    margin: 0 0 6px;
+  }
+  #ne.cata div.sta form input {
+    width: 100%!important;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #ne.cata div.sta form input.submit {
+    width: 100%!important;
+    height: auto!important;
+    margin: 0!important;
+    background-size: contain;
+  }
+  #ne.cata div.sta table,
+  #ne.cata div.sta tbody,
+  #ne.cata div.sta tr,
+  #ne.cata div.sta td {
+    display: block;
+    width: 100%;
+  }
+  #ne.cata div.sta tr {
+    margin: 0 0 15px;
+  }
+  #ne.cata div.sta tr:last-child {
+    margin-bottom: 0;
+  }
+  #lid ul li > span.srr,
+  #ne ul li > span.srr {
+    opacity: 1;
+    -moz-opacity: 1;
+    visibility: visible;
+    margin: 0;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1023px) {
