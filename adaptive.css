@@ -263,7 +263,7 @@
     width: auto!important;
     margin: 0;
     padding-top: 2px;
-    z-index: 15;
+    z-index: 98000;
   }
   #up .mob-btn {
     display: inline-block;
@@ -390,7 +390,7 @@
     transform: translateY(10px);
     width: 100%;
     height: auto;
-    z-index: 13;
+    z-index: 9993;
     transition: 0.3s ease;
   }
   #mtop ul li.menu-item {
@@ -1912,6 +1912,323 @@
     -moz-opacity: 1;
     visibility: visible;
     margin: 0;
+  }
+  #otov table.data-table th {
+    display: block;
+    width: 100%;
+  }
+  #otov table.data-table th:nth-child(n+2) {
+    display: none;
+  }
+  #otov table.data-table th,
+  #otov table.data-table td {
+    text-align: left;
+    padding-left: 10px!important;
+  }
+  #otov ul.subm li {
+    margin: 0;
+  }
+  #tov {
+    margin: 0;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  #tov div.dos {
+    display: block;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    height: auto;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  #tov div.tinf {
+    width: 100%;
+    float: none;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+  #tov div.tinf p {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  #tov div.tinf span.dis {
+    padding-bottom: 0;
+  }
+  #tov span.title {
+    margin-left: 0;
+  }
+  #tov div.foto {
+    width: 100%;
+    float: none;
+    margin-top: 10px;
+  }
+  #tov div.foto a.fo span {
+    background-position: 0 0;
+  }
+  #tov div.foto dt {
+    left: 0;
+    top: 0;
+  }
+  #tov div.foto dd {
+    top: -6px;
+    left: 55px;
+  }
+  #tov div.foto dl {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    background: transparent;
+    padding-top: 20px;
+  }
+  #tov div.foto dl a.a {
+    height: auto;
+    font: 12px/16px Arial;
+    position: relative;
+    top: auto;
+    left: auto;
+    padding-bottom: 1px;
+    display: inline-block;
+    margin-right: 7px;
+  }
+  #tov div.foto ul {
+    padding: 10px 10px 0;
+  }
+  #tov div.foto ul li {
+    margin: 0 10px 10px 0;
+  }
+  #tov div.foto ul li a.blog {
+    padding: 32px 8px 8px;
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+  #tov div.foto #tno {
+    width: 100%;
+    height: 200px;
+  }
+  #tov div.foto a.fo {
+    width: 100%;
+    height: 200px;
+    margin: 32px 0 27px 0;
+  }
+  #tov div.foto a.fo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+  #tov div.foto b,
+  #tov div.foto h2 {
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    cursor: default;
+    padding: 14px 0;
+    background: transparent;
+    text-align: center;
+  }
+  #cup {
+    margin: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  #cup div.pom {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+  #cup div.pom ul li.ot {
+    height: auto;
+    padding: 10px 0;
+  }
+  #cup div.ku button {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 0 auto 20px;
+  }
+  #cup div.ku span.sale {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cup div.ku ul li {
+    padding: 6px 0 10px!important;
+    height: auto;
+  }
+  #crumb.in {
+    height: auto;
+    padding: 0 0 23px;
+    float: none;
+    width: 100%;
+  }
+  #crumb a.B_crumb {
+    display: inline-block;
+    margin: 0 0 5px;
+  }
+  #druz {
+    height: auto;
+    display: block;
+    margin: 12px 0 21px;
+    float: none;
+    width: 100%;
+  }
+  #druz #nav2 {
+    float: none;
+    display: flex;
+    align-items: center;
+  }
+  #druz #nav2 dd {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  #druz #nav2 dd table {
+    width: 100%!important;
+    height: auto!important;
+  }
+  #druz #nav2 dd table a {
+    margin-top: 3px;
+    display: inline-block;
+  }
+  #druz dt.surprise {
+    width: 140px;
+    height: 29px;
+    margin: 10px auto!important;
+    float: none;
+  }
+  #druz dt {
+    height: auto;
+    display: block;
+    float: none;
+    margin: 8px 0;
+  }
+  #druz dt tt {
+    float: none;
+  }
+  #druz dl {
+    width: 100%;
+    margin: 10px;
+  }
+  #lid.am h2 {
+    width: 100%;
+  }
+  span#share42 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+  span#share42 span.share42-item {
+    margin: 0 10px 5px 0!important;
+  }
+  #info {
+    margin: 15px 0 7px;
+  }
+  #info div.section {
+    margin-right: 0;
+    float: none;
+    width: 100%;
+  }
+  #info div.box textarea {
+    display: block;
+    width: 100%;
+  }
+  #info div.box span {
+    display: block;
+    margin: 0;
+  }
+  #info div.box span span.har {
+    float: none;
+    padding: 0;
+    margin: 0 0 10px!important;
+    width: 100%!important;
+  }
+  #info div.box span span.har dl {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 9px;
+  }
+  #info div.box span span.har dl dt {
+    flex-shrink: 0;
+    float: none;
+    width: auto;
+  }
+  #info div.box span span.har dd {
+    flex-grow: 1;
+    margin: 0;
+    float: none;
+    text-align: right;
+  }
+  #info div.har span {
+    padding: 12px 10px 9px;
+  }
+  #info div.har div.dd {
+    display: none;
+  }
+  #info ul.tabs li {
+    float: none;
+    margin: 0!important;
+    width: 100%!important;
+  }
+  #clk {
+    width: 100%!important;
+    height: auto!important;
+  }
+  #clk table,
+  #clk tbody,
+  #clk tr,
+  #clk td {
+    display: block;
+    width: 100%!important;
+  }
+  .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened,
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened {
+    width: 95%!important;
+    height: auto!important;
+    left: 50%!important;
+    transform: translateX(-50%);
+  }
+  .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened .fancybox-title-over-wrap,
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened .fancybox-title-over-wrap {
+    padding-right: 40px;
+    font-size: 15px;
+  }
+  .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened .fancybox-inner,
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened .fancybox-inner {
+    width: 100%!important;
+    height: auto!important;
+  }
+  .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened .fancybox-inner #login,
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened .fancybox-inner #login {
+    width: 100%!important;
+    height: auto!important;
+  }
+  .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened .fancybox-inner #clk,
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened .fancybox-inner #clk {
+    padding-top: 50px;
+  }
+  .cbk-phone .cbk-phone-phone {
+    height: 20px !important;
+    margin: 10px;
+    width: 20px !important;
+  }
+  .cbk-phone {
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .cbk-phone .cbk-phone-phone .ws-icon-phone {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1023px) {
