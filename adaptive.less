@@ -517,7 +517,7 @@
 		transform: translateY(10px);
 		width: 100%;
 		height: auto;
-		z-index: 9993;
+		z-index: 9999;
 		.trn;
 	}
 
@@ -536,6 +536,11 @@
 		}
 		.menu-dropdown{
 			display: none;
+		}
+		&.active{
+			a.menu-link{
+				background-size: cover;
+			}
 		}
 	}
 
@@ -1080,6 +1085,12 @@
 					}
 				}
 			}
+			img.justifyleft{
+				display: block;
+				width: 100%!important;
+				height: auto!important;
+				max-width: 100%;
+			}
 		}
 		&.ca{
 			padding: 0!important;
@@ -1395,8 +1406,8 @@
 	}
 
 	.map-wr{
-		padding: 0;
-		width: 100%;
+		padding: 0!important;
+		width: 100%!important;
 		.map,
 		.map1{
 			float: none!important;
@@ -1583,8 +1594,8 @@
 		}
 	}
 
-	#otov form.reg,
-	#otov.pom .box1 form.reg{
+	#ne + #otov form.reg,
+	#ne + #otov.pom .box1 form.reg{
 		div{
 			padding-left: 10px;
 			padding-right: 10px;
@@ -1634,7 +1645,7 @@
 		}
 	}
 
-	#otov.pom .box1{
+	#ne + #otov.pom .box1{
 		form.reg#rey{
 			div:first-child{
 				padding-bottom: 0;
@@ -1750,12 +1761,22 @@
 					display: none;
 				}
 				a{
+					height: auto;
+					padding-bottom: 28px!important;
 					span.best {
 						width: 92px;
 						height: 20px;
 						bottom: 2px;
 						left: auto;
 						right: 56%;
+					}
+					span.img{
+						height: auto!important;
+					}
+					&:after {
+						content: "";
+						display: table;
+						clear: both;
 					}
 				}
 				button {
@@ -1958,34 +1979,73 @@
 	#ofo {
 		margin: 0;
 		padding-right: 0;
-		#ofko{
-			margin-bottom: 20px;
-			div.oim {
-				padding-right: 0;
-				margin: 15px auto;
-			}
-			div.obsh{
-				text-align: center;
-				b{
-					white-space: nowrap;
-				}
-			}
-			dt,
-			b a{
-				position: relative; 
-				bottom: auto;
-				right: auto;
-				left: auto!important;
-				width: auto!important;
-				margin-top: 7px;
-				display: block;
-			}
-			b a{
-				display: inline-block;
-			}
-		}
+		
 		#shopCart {
 			margin: 0!important;
+		}
+	}
+	#ofko{
+		width: 100%!important;
+		margin-bottom: 20px;
+		div.oim {
+			padding-right: 0;
+			margin: 15px auto;
+			width: 100%!important;
+			height: auto!important;
+			img{
+				display: block;
+				margin: 0 auto;
+				width: auto;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		div.obsh{
+			text-align: center;
+			b{
+				white-space: nowrap;
+			}
+		}
+		dt,
+		b a{
+			position: relative; 
+			bottom: auto;
+			right: auto;
+			left: auto!important;
+			width: auto!important;
+			margin-top: 7px;
+			display: block;
+		}
+		b a{
+			display: inline-block;
+		}
+		span.te{
+			display: none;
+		}
+	}
+	#ofk{
+		width: 100%!important;
+		padding: 16px 10px 27px;
+		input.cl {
+			width: 100%;
+			height: 36px;
+			font-size: 14px;
+			padding: 0 10px;
+		}
+		input.submit {
+			padding: 8px 10px 9px;
+			width: 100%;
+			background-size: contain!important;
+			white-space: normal;
+		}
+	}
+	#obs {
+		width: 100%!important;
+		padding: 20px 10px 0;
+		div.obsh {
+			display: block;
+			margin: 0;
+			text-align: center;
 		}
 	}
 
@@ -2154,6 +2214,18 @@
 			height: auto;
 			width: 100%;
 			padding-bottom: 25px;
+			background: none;
+			
+			&:after{
+				content: "";
+				display: block;
+				height: 16px;
+				width: 160px;
+				background: url("https://modernus.ru/css/card.gif") no-repeat left top;
+				position: absolute;
+				left: 13px;
+				bottom: 8px;
+			}
 		}
 		div.tinf {
 			width: 100%;
@@ -2256,8 +2328,9 @@
 				img{
 					display: block;
 					height: auto;
+					width: auto;
 					max-width: 100%;
-					max-height: 100%;
+					max-height: 200px;
 					margin: 0 auto;
 				}
 			}
@@ -2273,6 +2346,12 @@
 				padding: 14px 0;
 				background: transparent;
 				text-align: center;
+			}
+			p.sale {
+				height: 70px;
+			}
+			p.nale{
+				padding-top: 5px;
 			}
 		}
 	}
@@ -2306,7 +2385,7 @@
 				position: relative;
 				left: auto;
 				top: auto;
-				margin: 0 auto 20px;
+				margin: 5px auto 20px;
 			}
 			span.sale{
 				left: 50%;
@@ -2317,6 +2396,11 @@
 					padding: 6px 0 10px!important;
 					height: auto;
 				}
+			}
+			dt,
+			dd{
+				width: 100%;
+				padding: 0;
 			}
 		}
 	}
@@ -2432,7 +2516,9 @@
 						text-align: right;
 					}
 				}
-
+			}
+			div.otzstar {
+				right: 0!important;
 			}
 		}
 		div.har{
@@ -2450,6 +2536,7 @@
 				width: 100%!important;
 			}
 		}
+
 	}
 
 	#clk{
@@ -2465,7 +2552,8 @@
 	}
 
 	.fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened,
-	.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened{
+	.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened,
+	.fancybox-wrap.fancybox-mobile.fancybox-type-iframe.fancybox-opened{
 		width: 95%!important;
 		height: auto!important;
 		left: 50%!important;
@@ -2485,7 +2573,13 @@
 			height: auto!important;
 		}
 		#clk{
-			padding-top: 50px;
+			padding-top: 0;
+			td.ta1{
+				img{
+					display: block;
+					margin: 7px auto 0;
+				}
+			}
 		}
 	}
 
@@ -2577,6 +2671,16 @@
 		width: 100%;
 		min-width: 100%;
 		font-size: 14px;
+	}
+	.jot-name {
+		margin: 0 0 5px!important;
+		padding: 0 80px 0 0!important;
+		display: block!important;
+	}
+	.jot-date {
+		margin-right: 0!important;
+		padding: 0!important;
+		display: block!important;
 	}
 	#otovin{
 		margin: 0 0 5px;
@@ -2678,6 +2782,75 @@
 	#otovin.parth strong {
 		padding-bottom: 0;
 	}
+	.jot-comment-entry{
+		padding: 10px 10px 0!important;
+		#nfo{
+			padding: 10px 0 0 0!important;
+			margin: 0 -5px;
+			width: auto;
+			display: flex;
+			flex-wrap: wrap;
+			a.nfo{
+				width: 50%;
+				height: auto;
+				padding: 0 5px;
+				margin: 0 0 10px!important;
+				img{
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+			}
+		}
+	}
+	.section{
+		div.box{
+			iframe{
+				width: 100%!important;;
+				height: auto!important;
+			}
+}
+			}
+	#rtio {
+		min-width: 320px;
+		width: 100%;
+		background: none;
+		padding: 0;
+	}
+	#heado {
+		width: 100%;
+		height: auto;
+		div.pmo {
+			width: 100%;
+			float: none;
+			margin: 10px 0 20px 0;
+			padding: 0 10px;
+			font: 14px/140% Arial;
+			text-align: center;
+			b{
+				display: block;
+				font-size: 14px;
+			}
+		}
+		#log {
+			display: block;
+			width: 100%!important;
+			float: none;
+			margin: 0;
+			padding: 13px 10px 30px;
+			background: url("https://modernus.ru/css/rbg1.png") repeat-x 0 -140px;
+			a{
+				margin: 0 auto;
+			}
+		}
+	}
+	#ofor span.jq-file .browse{
+		font-size: 12px;
+	}
+
+	#ne + #otov .section div.box iframe{
+		height: 1380px!important;
+	}
 }
 
 @media screen and (min-width: 500px) and (max-width: 1023px){
@@ -2696,5 +2869,89 @@
 				padding: 0 5% 10px 20px;
 			}
 		}
+	}
+}
+
+.adaptive-iframe-form,
+.adaptive-iframe-form body{
+	min-width: 0;
+}
+
+.adaptive-iframe-form *{
+	box-sizing: unset;
+}
+
+@media screen and (max-width: 729px){
+	.adaptive-iframe-form *{
+		box-sizing: border-box;
+	}
+
+	.adaptive-iframe-form{
+
+		#otov form.reg,
+		#otov.pom .box1 form.reg{
+			div{
+				padding-left: 10px;
+				padding-right: 10px;
+				margin: 0 0 16px!important;
+				width: 100%!important;
+			}
+			dd{
+				display: none;
+			}
+			label {
+				font: 15px/100% Arial;
+				color: #3b464c;
+				display: block;
+				padding: 0 0 6px;
+				vertical-align: middle;
+			}
+			dl {
+				width: 100%;
+				height: auto;
+				margin: 0 0 15px;
+				&.le{
+					float: none;
+				}
+			}
+			input.fo{
+				width: 100%;
+				margin: 0;
+				height: 36px;
+				font-size: 14px;
+				padding: 0 10px;
+			}
+			p {
+				width: 100%;
+				padding: 0;
+			}
+			p.ob {
+				bottom: 15px;
+				right: auto;
+				left: 10px;
+			}
+			input.submit{
+				width: 100%;
+				margin-top: 0;
+			}
+			.cle{
+				margin: 0!important;
+			}
+		}
+
+		#otov.pom .box1{
+			form.reg#rey{
+				div:first-child{
+					padding-bottom: 0;
+				}
+			}
+			h2{
+				width: 100%!important;
+				padding-bottom: 10px!important;
+				font-size: 17px!important;
+				font-weight: 700;
+			}
+		}
+
 	}
 }

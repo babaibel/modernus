@@ -390,7 +390,7 @@
     transform: translateY(10px);
     width: 100%;
     height: auto;
-    z-index: 9993;
+    z-index: 9999;
     transition: 0.3s ease;
   }
   #mtop ul li.menu-item {
@@ -409,6 +409,9 @@
   }
   #mtop ul li.menu-item .menu-dropdown {
     display: none;
+  }
+  #mtop ul li.menu-item.active a.menu-link {
+    background-size: cover;
   }
   #mtop ul li.menu-item a.menu-link {
     text-align: center;
@@ -946,6 +949,12 @@
   #otov.pom span.dat div.zaka div.share42init span {
     margin: 0 9px 0 0!important;
   }
+  #otov.pom img.justifyleft {
+    display: block;
+    width: 100%!important;
+    height: auto!important;
+    max-width: 100%;
+  }
   #otov.ca {
     padding: 0!important;
   }
@@ -1228,8 +1237,8 @@
     margin-top: 0;
   }
   .map-wr {
-    padding: 0;
-    width: 100%;
+    padding: 0!important;
+    width: 100%!important;
   }
   .map-wr .map,
   .map-wr .map1 {
@@ -1401,67 +1410,67 @@
   #otov ul.subm li:last-child a {
     margin-bottom: 0;
   }
-  #otov form.reg div,
-  #otov.pom .box1 form.reg div {
+  #ne + #otov form.reg div,
+  #ne + #otov.pom .box1 form.reg div {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 16px!important;
     width: 100%!important;
   }
-  #otov form.reg dd,
-  #otov.pom .box1 form.reg dd {
+  #ne + #otov form.reg dd,
+  #ne + #otov.pom .box1 form.reg dd {
     display: none;
   }
-  #otov form.reg label,
-  #otov.pom .box1 form.reg label {
+  #ne + #otov form.reg label,
+  #ne + #otov.pom .box1 form.reg label {
     font: 15px/100% Arial;
     color: #3b464c;
     display: block;
     padding: 0 0 6px;
     vertical-align: middle;
   }
-  #otov form.reg dl,
-  #otov.pom .box1 form.reg dl {
+  #ne + #otov form.reg dl,
+  #ne + #otov.pom .box1 form.reg dl {
     width: 100%;
     height: auto;
     margin: 0 0 15px;
   }
-  #otov form.reg dl.le,
-  #otov.pom .box1 form.reg dl.le {
+  #ne + #otov form.reg dl.le,
+  #ne + #otov.pom .box1 form.reg dl.le {
     float: none;
   }
-  #otov form.reg input.fo,
-  #otov.pom .box1 form.reg input.fo {
+  #ne + #otov form.reg input.fo,
+  #ne + #otov.pom .box1 form.reg input.fo {
     width: 100%;
     margin: 0;
     height: 36px;
     font-size: 14px;
     padding: 0 10px;
   }
-  #otov form.reg p,
-  #otov.pom .box1 form.reg p {
+  #ne + #otov form.reg p,
+  #ne + #otov.pom .box1 form.reg p {
     width: 100%;
     padding: 0;
   }
-  #otov form.reg p.ob,
-  #otov.pom .box1 form.reg p.ob {
+  #ne + #otov form.reg p.ob,
+  #ne + #otov.pom .box1 form.reg p.ob {
     bottom: 15px;
     right: auto;
     left: 10px;
   }
-  #otov form.reg input.submit,
-  #otov.pom .box1 form.reg input.submit {
+  #ne + #otov form.reg input.submit,
+  #ne + #otov.pom .box1 form.reg input.submit {
     width: 100%;
     margin-top: 0;
   }
-  #otov form.reg .cle,
-  #otov.pom .box1 form.reg .cle {
+  #ne + #otov form.reg .cle,
+  #ne + #otov.pom .box1 form.reg .cle {
     margin: 0!important;
   }
-  #otov.pom .box1 form.reg#rey div:first-child {
+  #ne + #otov.pom .box1 form.reg#rey div:first-child {
     padding-bottom: 0;
   }
-  #otov.pom .box1 h2 {
+  #ne + #otov.pom .box1 h2 {
     width: 100%!important;
     padding-bottom: 10px!important;
     font-size: 17px!important;
@@ -1563,12 +1572,24 @@
   #vbned ul li span.wi {
     display: none;
   }
+  #vbned ul li a {
+    height: auto;
+    padding-bottom: 28px!important;
+  }
   #vbned ul li a span.best {
     width: 92px;
     height: 20px;
     bottom: 2px;
     left: auto;
     right: 56%;
+  }
+  #vbned ul li a span.img {
+    height: auto!important;
+  }
+  #vbned ul li a:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   #vbned ul li button {
     bottom: 0;
@@ -1754,21 +1775,34 @@
     margin: 0;
     padding-right: 0;
   }
-  #ofo #ofko {
+  #ofo #shopCart {
+    margin: 0!important;
+  }
+  #ofko {
+    width: 100%!important;
     margin-bottom: 20px;
   }
-  #ofo #ofko div.oim {
+  #ofko div.oim {
     padding-right: 0;
     margin: 15px auto;
+    width: 100%!important;
+    height: auto!important;
   }
-  #ofo #ofko div.obsh {
+  #ofko div.oim img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  #ofko div.obsh {
     text-align: center;
   }
-  #ofo #ofko div.obsh b {
+  #ofko div.obsh b {
     white-space: nowrap;
   }
-  #ofo #ofko dt,
-  #ofo #ofko b a {
+  #ofko dt,
+  #ofko b a {
     position: relative;
     bottom: auto;
     right: auto;
@@ -1777,11 +1811,36 @@
     margin-top: 7px;
     display: block;
   }
-  #ofo #ofko b a {
+  #ofko b a {
     display: inline-block;
   }
-  #ofo #shopCart {
-    margin: 0!important;
+  #ofko span.te {
+    display: none;
+  }
+  #ofk {
+    width: 100%!important;
+    padding: 16px 10px 27px;
+  }
+  #ofk input.cl {
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  #ofk input.submit {
+    padding: 8px 10px 9px;
+    width: 100%;
+    background-size: contain!important;
+    white-space: normal;
+  }
+  #obs {
+    width: 100%!important;
+    padding: 20px 10px 0;
+  }
+  #obs div.obsh {
+    display: block;
+    margin: 0;
+    text-align: center;
   }
   #ofor {
     width: 100%!important;
@@ -1939,6 +1998,17 @@
     height: auto;
     width: 100%;
     padding-bottom: 25px;
+    background: none;
+  }
+  #tov div.dos:after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 160px;
+    background: url("https://modernus.ru/css/card.gif") no-repeat left top;
+    position: absolute;
+    left: 13px;
+    bottom: 8px;
   }
   #tov div.tinf {
     width: 100%;
@@ -2031,8 +2101,9 @@
   #tov div.foto a.fo img {
     display: block;
     height: auto;
+    width: auto;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 200px;
     margin: 0 auto;
   }
   #tov div.foto b {
@@ -2047,6 +2118,12 @@
     padding: 14px 0;
     background: transparent;
     text-align: center;
+  }
+  #tov div.foto p.sale {
+    height: 70px;
+  }
+  #tov div.foto p.nale {
+    padding-top: 5px;
   }
   #info div.mar {
     display: none;
@@ -2072,7 +2149,7 @@
     position: relative;
     left: auto;
     top: auto;
-    margin: 0 auto 20px;
+    margin: 5px auto 20px;
   }
   #cup div.ku span.sale {
     left: 50%;
@@ -2081,6 +2158,11 @@
   #cup div.ku ul li {
     padding: 6px 0 10px!important;
     height: auto;
+  }
+  #cup div.ku dt,
+  #cup div.ku dd {
+    width: 100%;
+    padding: 0;
   }
   #crumb.in {
     height: auto;
@@ -2188,6 +2270,9 @@
     float: none;
     text-align: right;
   }
+  #info div.box div.otzstar {
+    right: 0!important;
+  }
   #info div.har span {
     padding: 12px 10px 9px;
   }
@@ -2211,7 +2296,8 @@
     width: 100%!important;
   }
   .fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened,
-  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened {
+  .fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened,
+  .fancybox-wrap.fancybox-mobile.fancybox-type-iframe.fancybox-opened {
     width: 95%!important;
     height: auto!important;
     left: 50%!important;
@@ -2230,7 +2316,11 @@
     height: auto!important;
   }
   .fancybox-inner #clk {
-    padding-top: 50px;
+    padding-top: 0;
+  }
+  .fancybox-inner #clk td.ta1 img {
+    display: block;
+    margin: 7px auto 0;
   }
   .cbk-phone .cbk-phone-phone {
     height: 20px !important;
@@ -2312,6 +2402,16 @@
     width: 100%;
     min-width: 100%;
     font-size: 14px;
+  }
+  .jot-name {
+    margin: 0 0 5px!important;
+    padding: 0 80px 0 0!important;
+    display: block!important;
+  }
+  .jot-date {
+    margin-right: 0!important;
+    padding: 0!important;
+    display: block!important;
   }
   #otovin {
     margin: 0 0 5px;
@@ -2409,6 +2509,70 @@
   #otovin.parth strong {
     padding-bottom: 0;
   }
+  .jot-comment-entry {
+    padding: 10px 10px 0!important;
+  }
+  .jot-comment-entry #nfo {
+    padding: 10px 0 0 0!important;
+    margin: 0 -5px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .jot-comment-entry #nfo a.nfo {
+    width: 50%;
+    height: auto;
+    padding: 0 5px;
+    margin: 0 0 10px!important;
+  }
+  .jot-comment-entry #nfo a.nfo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .section div.box iframe {
+    width: 100%!important;
+    height: auto!important;
+  }
+  #rtio {
+    min-width: 320px;
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  #heado {
+    width: 100%;
+    height: auto;
+  }
+  #heado div.pmo {
+    width: 100%;
+    float: none;
+    margin: 10px 0 20px 0;
+    padding: 0 10px;
+    font: 14px/140% Arial;
+    text-align: center;
+  }
+  #heado div.pmo b {
+    display: block;
+    font-size: 14px;
+  }
+  #heado #log {
+    display: block;
+    width: 100%!important;
+    float: none;
+    margin: 0;
+    padding: 13px 10px 30px;
+    background: url("https://modernus.ru/css/rbg1.png") repeat-x 0 -140px;
+  }
+  #heado #log a {
+    margin: 0 auto;
+  }
+  #ofor span.jq-file .browse {
+    font-size: 12px;
+  }
+  #ne + #otov .section div.box iframe {
+    height: 1380px!important;
+  }
 }
 @media screen and (min-width: 500px) and (max-width: 1023px) {
   #foo #botm {
@@ -2424,5 +2588,83 @@
     width: 50%;
     margin: 0;
     padding: 0 5% 10px 20px;
+  }
+}
+.adaptive-iframe-form,
+.adaptive-iframe-form body {
+  min-width: 0;
+}
+.adaptive-iframe-form * {
+  box-sizing: unset;
+}
+@media screen and (max-width: 729px) {
+  .adaptive-iframe-form * {
+    box-sizing: border-box;
+  }
+  .adaptive-iframe-form #otov form.reg div,
+  .adaptive-iframe-form #otov.pom .box1 form.reg div {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 0 16px!important;
+    width: 100%!important;
+  }
+  .adaptive-iframe-form #otov form.reg dd,
+  .adaptive-iframe-form #otov.pom .box1 form.reg dd {
+    display: none;
+  }
+  .adaptive-iframe-form #otov form.reg label,
+  .adaptive-iframe-form #otov.pom .box1 form.reg label {
+    font: 15px/100% Arial;
+    color: #3b464c;
+    display: block;
+    padding: 0 0 6px;
+    vertical-align: middle;
+  }
+  .adaptive-iframe-form #otov form.reg dl,
+  .adaptive-iframe-form #otov.pom .box1 form.reg dl {
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px;
+  }
+  .adaptive-iframe-form #otov form.reg dl.le,
+  .adaptive-iframe-form #otov.pom .box1 form.reg dl.le {
+    float: none;
+  }
+  .adaptive-iframe-form #otov form.reg input.fo,
+  .adaptive-iframe-form #otov.pom .box1 form.reg input.fo {
+    width: 100%;
+    margin: 0;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .adaptive-iframe-form #otov form.reg p,
+  .adaptive-iframe-form #otov.pom .box1 form.reg p {
+    width: 100%;
+    padding: 0;
+  }
+  .adaptive-iframe-form #otov form.reg p.ob,
+  .adaptive-iframe-form #otov.pom .box1 form.reg p.ob {
+    bottom: 15px;
+    right: auto;
+    left: 10px;
+  }
+  .adaptive-iframe-form #otov form.reg input.submit,
+  .adaptive-iframe-form #otov.pom .box1 form.reg input.submit {
+    width: 100%;
+    margin-top: 0;
+  }
+  .adaptive-iframe-form #otov form.reg .cle,
+  .adaptive-iframe-form #otov.pom .box1 form.reg .cle {
+    margin: 0!important;
+  }
+  .adaptive-iframe-form #otov.pom .box1 form.reg#rey div:first-child {
+    padding-bottom: 0;
+  }
+  .adaptive-iframe-form #otov.pom .box1 h2 {
+    width: 100%!important;
+    padding-bottom: 10px!important;
+    font-size: 17px!important;
+    font-weight: 700;
   }
 }
