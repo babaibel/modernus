@@ -1842,6 +1842,9 @@
     margin: 0;
     text-align: center;
   }
+  #obs div.obsh b {
+    white-space: nowrap;
+  }
   #ofor {
     width: 100%!important;
   }
@@ -2572,6 +2575,14 @@
   }
   #ne + #otov .section div.box iframe {
     height: 1380px!important;
+  }
+  .fancybox-wrap iframe.fancybox-clk-frame {
+    height: 665px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .fancybox-wrap iframe.fancybox-clk-frame {
+    height: 735px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1023px) {
