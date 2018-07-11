@@ -137,8 +137,26 @@
 	padding: 4px 0 0 8px;
 }
 
+#phon dl a{
+	display: inline-block;
+	color: inherit;
+	border-bottom: 0!important;
+	&:hover{
+		color: inherit!important;
+	}
+}
+
+#ban p.po b a{
+	font: 700 16px/120% Arial!important;
+    display: inline-block;
+    text-decoration: none;
+    color: #5a6b74!important;
+}
+
 @media screen and (min-width: 1024px){
-	
+	#mtop ul li.menu-item .menu-dropdown{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 1023px){
@@ -533,9 +551,37 @@
 			right: 0;
 			height: 38px;
 			background-repeat: repeat; 
+			display: none!important;
 		}
 		.menu-dropdown{
 			display: none;
+			position: static;
+			padding: 10px 0 0;
+			visibility: unset;
+			opacity: 1;
+			border: none;
+			&:after{
+				left: 50%;
+				top: 32px;
+				margin-left: -6px;
+			}
+			.dropdown-category{
+				display: block;
+				float: none;
+				margin: 0;
+				padding: 10px;
+				ul.subcategories{
+					li{
+						height: auto;
+						padding: 0;
+						margin-bottom: 2px;
+						a{
+							display: inline-block;
+							padding: 5px 0;
+						}
+					}
+				}
+			}
 		}
 		&.active{
 			a.menu-link{
@@ -1533,7 +1579,8 @@
 			p.zab {
 				top: 73px;
 				left: auto;
-				right: 0;
+				right: 10px;
+				width: auto!important;
 			}
 			p.ob {
 				padding: 0;
@@ -1594,6 +1641,8 @@
 		}
 	}
 
+	
+
 	#ne + #otov form.reg,
 	#ne + #otov.pom .box1 form.reg{
 		div{
@@ -1601,6 +1650,9 @@
 			padding-right: 10px;
 			margin: 0 0 16px!important;
 			width: 100%!important;
+			&.zag{
+				margin-bottom: 0!important;
+			}
 		}
 		dd{
 			display: none;
@@ -1642,6 +1694,12 @@
 		}
 		.cle{
 			margin: 0!important;
+		}
+	}
+
+	#ne + #otov.pom #otov.pom.no form[name="loginfrm"].reg{
+		dl{
+			margin: 0 0 10px!important;
 		}
 	}
 
@@ -1751,24 +1809,35 @@
 		}
 		ul{
 			max-width: 100%;
-			padding-bottom: 20px;
+			padding-bottom: 5px;
 			li{
 				width: 100%!important;
 				height: auto!important;
 				float: none;
-				border: none!important;
+				border-left: none!important;
+				border-right: none!important;
+				border-bottom: 1px dashed #f5d6db;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+				&:last-child{
+					border-bottom: none!important;
+					margin-bottom: 0;
+				}
 				span.wi{
 					display: none;
 				}
 				a{
 					height: auto;
-					padding-bottom: 28px!important;
-					span.best {
+					padding-bottom: 0!important;
+					margin-bottom: 30px;
+					span.best,
+					span.sale {
 						width: 92px;
 						height: 20px;
-						bottom: 2px;
+						bottom: 17px;
 						left: auto;
 						right: 56%;
+						text-align: center;
 					}
 					span.img{
 						height: auto!important;
@@ -1780,7 +1849,7 @@
 					}
 				}
 				button {
-					bottom: 0;
+					bottom: 15px;
 					left: 50%;
 					right: auto;
 				}
@@ -2384,6 +2453,7 @@
 			}
 		}
 		div.ku{
+			margin-top: 25px;
 			button{
 				position: relative;
 				left: auto;
@@ -2523,6 +2593,9 @@
 			div.otzstar {
 				right: 0!important;
 			}
+			p span{
+				padding: 0;
+			}
 		}
 		div.har{
 			span{
@@ -2554,9 +2627,9 @@
 		}
 	}
 
-	.fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened,
-	.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened,
-	.fancybox-wrap.fancybox-mobile.fancybox-type-iframe.fancybox-opened{
+	.fancybox-wrap.fancybox-mobile.fancybox-type-inline,
+	.fancybox-wrap.fancybox-desktop.fancybox-type-inline,
+	.fancybox-wrap.fancybox-mobile.fancybox-type-iframe{
 		width: 95%!important;
 		height: auto!important;
 		left: 50%!important;
@@ -2812,8 +2885,8 @@
 				width: 100%!important;;
 				height: auto!important;
 			}
-}
-			}
+		}
+	}
 	#rtio {
 		min-width: 320px;
 		width: 100%;
@@ -2858,6 +2931,37 @@
 	.fancybox-wrap iframe.fancybox-clk-frame {
 	    height: 665px;
 	}
+
+	ul.mvm{
+		padding: 30px 0;
+	}
+
+	#ne.cata div.cai code{
+		position: relative;
+		top: auto;
+		right: auto;
+		margin-bottom: 10px;
+	}
+	#nei #ne.cata div.cai.pom + .rssle{
+		margin-top: 0!important;
+	}
+	#tov div.foto p.nale1{
+		padding: 9px 5px;
+		height: auto;
+	}
+	#cup div.ku span.net{
+		position: relative;
+		left: auto;
+		top: auto;
+		margin: 5px auto 20px;
+	}
+	#cup span.ba{
+		display: none;
+	}
+	#stuffHelper div.shs-count{
+		padding: 0 12px;
+	}
+
 }
 
 @media screen and (max-width: 410px){
