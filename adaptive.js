@@ -24,4 +24,57 @@ $(function () {
 		return false;
 	});
 
+	// $('.fancybox-iframe').load(function() { 
+	// 	alert('gg2');
+ //       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+	// });
+
+	// $('.crcl2').fancybox({
+	// 	type: 'iframe',
+	// 	autoHeight: true,
+	// 	scrolling : 'no', // changes CSS property "overflow" for the "fancybox-inner" element
+	// 	iframe : {
+	// 	    scrolling : 'no', // changes "scrolling" for the iframe only
+	// 	    preload   : true
+	// 	},
+	// 	afterLoad: function(current) {
+	// 		alert($('.fancybox-iframe').height());
+	//     },
+	// 	afterShow: function(){
+	// 		alert($('.fancybox-iframe').height());
+	// 	}
+	// });
+});
+
+$(function(){ 
+	var paused = false,
+		out = 250,
+		$toTop = $('.to_top .to_top_button');
+
+	var stickyToTop = function () {
+		
+		var scrollTop = $(window).scrollTop();
+
+		if( (scrollTop) > out){
+		  if (!paused) {
+			$toTop.addClass('_active');
+			paused = true;
+		  }
+		} else{
+		  if (paused) {
+			$toTop.removeClass('_active');
+			paused = false;
+		  }
+		}
+	}
+	stickyToTop();
+
+	$toTop.on('click', function () {
+		$(window).scrollTop(0);
+	});
+
+
+	$(window).scroll(function(){
+		stickyToTop();
+	});
 });
